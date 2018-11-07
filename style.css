@@ -1,0 +1,349 @@
+    /* ==================
+        style Rules 
+    ======================*/
+
+    /* ==================
+       Theme Name: Project Template
+        Theme URI: 
+        Author: ASP001 Batch
+        Description: 
+        Version: 1.0
+    ======================*/
+
+    /* ==================
+        Default CSS 
+    ======================*/
+
+    /* ==================
+        Theme Background Image
+    ======================*/
+
+    /* ==================
+        Theme CSS 
+        1. Top Area
+        2 Banner Area
+        3.About Area
+    ======================*/
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+    *,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+
+    body {
+        font-weight: 400;
+        line-height: 1.7;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        /* font-family: 'Nunito Sans', sans-serif; */
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .bg-sky-blue {
+        background: #10c9c3 !important;
+    }
+
+    .bg-offwhite {
+        background: #f5f5f5 !important;
+    }
+
+    .site-btn {
+        background: #10c9c3;
+        color: #fff;
+        padding: 10px 23px;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+    .site-btn:hover {
+        color: #fff;
+    }
+
+    .section-padding-block {
+        padding: 50px 0;
+    }
+
+    /* Top Area style */
+
+    .banner-bg-1 {
+        background-image: url(asset/img/banner-bg.jpg);
+    }
+
+    .banner-bg-2 {
+        background-image: url(asset/img/banner-bg-2.jpeg);
+    }
+
+    .client-img-1 {
+        background-image: url(asset/img/client-img.jpg);
+    }
+
+    .skill-bg::before {
+        background-image: url(asset/img/banner-bg.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    /* ==================
+        Theme CSS Rules 
+    ======================*/
+
+    /* Top Area style */
+
+    .header-absulate {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .site-top-bar {
+        padding: 30px 0;
+    }
+
+    .site-menu ul {
+        text-align: right;
+    }
+
+    .site-menu li {
+        display: inline-block;
+        position: relative;
+    }
+
+    .site-menu li a {
+        display: block;
+        padding: 10px 15px;
+        color: #1d1d1d;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .site-menu li a:hover {
+        color: #3bcfcb;
+        transition: all .4s;
+    }
+
+    .active {
+        color: #3bcfcb !important;
+    }
+
+    /* Banner Area style */
+
+    .single-banner-warp {
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+    }
+
+    .banner-display-table {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-display-tablecell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .banner-text h2,
+    .banner-text p,
+    .section-text p {
+        font-weight: 400;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .banner-text h2 {
+        font-size: 36px;
+        color: #1d1d1d;
+    }
+
+    .banner-text p {
+        font-size: 18px;
+        color: #787878;
+    }
+
+    .banner-btn {
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+
+    .owl-nav {
+        position: absolute;
+        left: 4%;
+        top: 50%;
+        
+    }
+
+    .owl-nav .owl-next i.fa {
+        margin-left: 737px;
+    }
+
+    /* About Area style */
+
+    .section-text h2 {
+        font-size: 33px;
+        font-weight: 700;
+        color: #191919;
+    }
+
+    .section-text p {
+        color: #787878;
+    }
+
+    /* agency skill Area style */
+
+    .skill-bg {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .skill-bg::before {
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 50%;
+    }
+
+    .skill-progress-bar ul {
+        text-align: left;
+    }
+
+    .skill-progress-bar li {
+        background: #d8d8d8;
+        height: 10px;
+        margin-bottom: 20px;
+    }
+
+    .skill-progress-bar ul li>span {
+        background: #10c9c3;
+        height: 10px;
+        position: absolute;
+    }
+
+    .bar-ux-design {
+        width: 75%;
+        -moz-animation: bar-ux-design 2s;
+        -webkit-animation: bar-ux-design 2s;
+        animation: bar-ux-design 2s;
+        animation-delay: 2s;
+    }
+
+    .skill-progress-bar ul li em {
+        position: relative;
+        top: -35px;
+    }
+
+    @-moz-keyframes bar-ux-design {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 75%;
+        }
+    }
+
+    @-webkit-keyframes bar-ux-design {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 75%;
+        }
+    }
+
+    @keyframes bar-ux-design {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 75%;
+        }
+    }
+
+    /* client section style */
+
+    i.client-icon {
+        position: absolute;
+        top: 20px;
+    }
+
+    .client-text {
+        margin-left: 45px;
+    }
+
+    /* portfolio section style */
+
+    .popup-gallery {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .gallery {
+        position: relative;
+        width: 100%;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+
+    .load-portfolio a {
+        color: #8e8e8e;
+    }
+
+    .single-service p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #787878;
+    }
+
+    blockquote p {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .review-author cite {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .single-client-review {
+        background-size: cover;
+        background-position: center center;
+        height: 130px;
+    }
+
+    .input-text-100 {
+        display: block;
+        width: 100%;
+        border: none;
+        padding: 10px 22px;
+        border: 1px solid #8e8e8e;
+        border-radius: 3px;
+        color: #8e8e8e;
+    }
+
+    .input-100 {
+        margin-bottom: 15px;
+    }
